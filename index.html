@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Personal Portfolio</title>
+
+        <link rel="icon" href="./resources/images/ylon-logo.png" />
+        <link rel="stylesheet" href="styles/main.css" />
+
+        <script type="module" src="scripts/index.js" defer></script>
+    </head>
+
+    <body class="bg-black user-select-none">
+        <!-- Navigation Bar -->
+        <nav id="navigation" class="default-view navbar navbar-nav sticky-top bg-black border-bottom border-body px-3 mb-3" data-bs-theme="dark">
+            <div class="navigation container-fluid px-3">
+                <a class="navbar-brand website-logo" href="#">
+                    <img src="./resources/images/ylon-logo.png" alt="Personal Portfolio Logo" width="35" height="35" />
+                </a>
+
+                <ul class="nav nav-underline justify-content-end gap-5 px-2">
+                    <li class="nav-item">
+                        <a id="#about" href="#about" class="nav-link text-light" aria-current="page">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a id="#creations" href="#creations" class="nav-link text-light" aria-current="page">Creations</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a id="#favorites" href="#favorites" class="nav-link text-light" aria-current="page">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22.5" height="22.5" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <nav id="navigation-collapse" class="mobile-view navbar navbar-expand-lg sticky-top border-bottom border-dark bg-black">
+            <div class="container-fluid">
+                <a class="navbar-brand website-logo" href="#">
+                    <img src="./resources/images/ylon-logo.png" alt="Personal Portfolio Logo" width="35" height="35" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavigation" aria-controls="navbarNavigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavigation">
+                    <div class="navbar-nav nav-underline">
+                        <a class="nav-link text-light ps-3" href="#about">About</a>
+                        <a class="nav-link text-light ps-3" href="#creations">Creations</a>
+                        <a class="nav-link text-light ps-3" href="#favorites">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22.5" height="22.5" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Introduction -->
+        <img src="./resources/images/keyboard.jpg" alt="Keyboard" class="rounded-5 mx-auto d-block mb-5 introduction-img" width="auto" height="550" />
+
+        <div id="introduction" class="container-fluid mx-auto my-3 text-center hidden">
+            <!-- Simple Introductory Statement -->
+            <h1 class="text-light fw-bold">
+                I'M
+                <span class="text-primary fw-bold">XYLON</span>
+            </h1>
+            <p class="fs-2 fw-bold text-body-secondary">I program things</p>
+
+            <br />
+
+            <p class="text-secondary fs-4 mx-5">I'm a software developer and programmer who specializes in creating high-quality software programs.</p>
+
+            <!-- Socials -->
+            <a href="https://github.com/ylonn" class="text-dark">
+                <svg id="social-github" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github social" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                    />
+                </svg>
+            </a>
+
+            <a href="https://discord.com/users/691954028321701899" class="text-dark">
+                <svg id="social-github" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-discord social" viewBox="0 0 16 16">
+                    <path
+                        d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"
+                    />
+                </svg>
+            </a>
+
+            <a href="https://x.com/ylondesu" class="text-dark">
+                <svg id="social-x" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter-x social" viewBox="0 0 16 16">
+                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                </svg>
+            </a>
+        </div>
+
+        <br /><br /><br /><br />
+
+        <!-- Break Image -->
+        <img src="./resources/images/keyboard.jpg" alt="Keyboard" class="rounded-5 mx-auto d-block mb-5 introduction-img" width="auto" height="550" />
+
+        <div id="about" class="container-fluid mx-auto my-5 hidden">
+            <br />
+
+            <p class="fs-3 fw-bold text-light text-center mt-5">AB<span class="fs-3 fw-bold text-primary text-center mt-5">OUT</span></p>
+            <p class="fs-4 fw-bold text-body-secondary text-center mb-5">A short information about myself</p>
+
+            <br />
+
+            <!-- About Default View -->
+            <div class="default-view">
+                <div class="row mb-5 hidden">
+                    <div class="col">
+                        <p class="text-secondary fs-4 mx-5">
+                            Everything started from Minecraft. From using Minecraft Command Blocks, to Minecraft Functions, to Minecraft Add-ons, to learning the "GameTest" feature of Minecraft around late September of 2021 which uses the programming language JavaScript.
+
+                            <br /><br />
+
+                            After learning JavaScript, I started learning other languages, and later on started learning different development sectors such as programming in Web Development, learning frameworks and databases.
+                        </p>
+                    </div>
+
+                    <div class="col">
+                        <img src="./resources/images/random-javascript.jpg" alt="Random JavaScript Program" class="rounded-5 mx-auto d-block mb-5 about-img" width="auto" height="550" id="about-img" />
+                    </div>
+                </div>
+
+                <div class="row mb-5 hidden">
+                    <div class="col">
+                        <img src="./resources/images/random-javascript-2.jpg" alt="Random JavaScript Program" class="rounded-5 d-block mb-5 about-img" width="auto" height="550" id="about-img-1" />
+                    </div>
+
+                    <div class="col">
+                        <p class="text-secondary fs-4 mx-5">
+                            The college course I will take upon stepping on college is BS Computer Science. When I was young, I have always wanted to become an architect due to the talent gifted to me on birth. However, as I grew older, using my talents became quite boring to me. It started becoming more like a task instead of a hobby. Around the late school year of my ninth grade, I learned how to program, it was enjoyable and even if it was a task assigned to me, it didn't feel like such a
+                            burden. As I reach my tenth grade, I decided to take Computer Science instead of taking Architecture.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row mb-5 hidden">
+                    <div class="col">
+                        <p class="text-secondary fs-4 mx-5">Talking about my favorite beverage to drink, especially when programming, is definitely a brewed cup of hot coffee. It doesn't only keep me awake and alive, it also gives me a certain feeling of happiness.</p>
+                    </div>
+
+                    <div class="col">
+                        <img src="./resources/images/coffee.jpg" alt="Random JavaScript Program" class="rounded-5 mx-auto d-block mb-5 about-img" width="auto" height="550" id="about-img-2" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Mobile View -->
+            <div class="mobile-view">
+                <div class="row hidden">
+                    <img src="./resources/images/random-javascript.jpg" alt="Random JavaScript Program" class="rounded-5 mx-auto d-block mb-5 about-img" width="auto" height="550" id="about-img" />
+                </div>
+
+                <div class="row mb-5 hidden">
+                    <p class="text-secondary fs-4 px-5">
+                        Everything started from Minecraft. From using Minecraft Command Blocks, to Minecraft Functions, to Minecraft Add-ons, to learning the "GameTest" feature of Minecraft around late September of 2021 which uses the programming language JavaScript.
+
+                        <br /><br />
+
+                        After learning JavaScript, I started learning other languages, and later on started learning different development sectors such as programming in Web Development, learning frameworks and databases.
+                    </p>
+                </div>
+
+                <div class="row hidden">
+                    <img src="./resources/images/random-javascript-2.jpg" alt="Random JavaScript Program" class="rounded-5 d-block mb-5 about-img" width="auto" height="550" id="about-img-1" />
+                </div>
+
+                <div class="row mb-5 hidden">
+                    <p class="text-secondary fs-4 px-5">
+                        The college course I will take upon stepping on college is BS Computer Science. When I was young, I have always wanted to become an architect due to the talent gifted to me on birth. However, as I grew older, using them became quite a bore and I started seeing it more as a task instead of a hobby. Around the late school year of my ninth grade (2020-2021), I learned how to program, it was enjoyable and even if the project is an assigned task, it didn't feel like such a
+                        burden. As I reach my tenth grade, I decided to take Computer Science instead of taking Architecture.
+                    </p>
+                </div>
+
+                <div class="row hidden">
+                    <img src="./resources/images/coffee.jpg" alt="Random JavaScript Program" class="rounded-5 mx-auto d-block mb-5 about-img" width="auto" height="550" id="about-img-2" />
+                </div>
+
+                <div class="row mb-5 hidden">
+                    <p class="text-secondary fs-4 px-5">Talking about my favorite beverage to drink, especially when programming, is definitely a brewed cup of hot coffee. It doesn't only keep me awake and alive, it also gives me a certain feeling of happiness.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Break Image -->
+        <img src="./resources/images/keyboard.jpg" alt="Keyboard" class="rounded-5 mx-auto d-block mb-5 introduction-img" width="auto" height="550" />
+
+        <div id="creations" class="container-fluid mx-auto my-5 hidden">
+            <br /><br /><br />
+
+            <p class="fs-3 fw-bold text-light text-center">CREA<span class="fs-3 fw-bold text-primary text-center mt-5">TIONS</span></p>
+            <p class="fs-4 fw-bold text-body-secondary text-center mb-5">Some creations I have done</p>
+
+            <!-- Creations Default View -->
+            <div class="default-view">
+                <div class="row hidden">
+                    <div class="col">
+                        <img src="./resources/images/random-javascript-1.jpg" alt="Random JavaScript Program" class="rounded-5 mx-auto d-block mb-5" width="auto" height="550" id="creations-img" />
+                    </div>
+
+                    <div class="col">
+                        <p class="text-secondary fs-4 mx-5">
+                            Throughout my approximately four (4) years of programming experience, I have developed various creations and systems. For basic HTML-CSS-JS games, I have programmed TicTacToe, Color-Guessing Games, and other games which do not require object-rendering.
+
+                            <br /><br />
+
+                            Minercaft Scripting API related, I have developed wrappers, command handlers, event handlers, custom mini-game systems. and more.
+                        </p>
+                    </div>
+                </div>
+
+                <br /><br /><br />
+
+                <div class="row hidden">
+                    <div class="col">
+                        <p class="fs-3 fw-bold text-light text-center">TIC<span class="fs-3 fw-bold text-secondary text-center mt-5">TAC</span><span class="fs-3 fw-bold text-primary text-center mt-5">TOE</span></p>
+
+                        <p class="text-secondary fs-4 mx-5">
+                            This <span class="fw-bold text-primary">TicTacToe</span> game which I have developed is both a <span class="fw-bold">Player VS Player</span> and a <span class="fw-bold">Player VS Bot</span> where the bot's data (place delay and accuracy) can be edited.
+
+                            <br /><br />
+
+                            The bot has an algorithm that it follows where it detects possible winning orientations of the player and stops them (the player) from winning easily.
+                        </p>
+                    </div>
+
+                    <div class="col">
+                        <a href="./resources/projects/tictactoe/index.html">
+                            <img src="./resources/images/tictactoe.jpg" alt="TicTacToe" class="rounded-5 mx-auto d-block mb-5" width="auto" height="550" id="creations-tictactoe-img" data-bs-toggle="tooltip" data-bs-title="TicTacToe (Click)" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row hidden">
+                    <div class="col">
+                        <a href="https://github.com/imnotverysure/CommandHandler">
+                            <img src="./resources/images/command-handler.png" alt="CommandHandler" class="rounded-5 mx-auto d-block mb-5" width="auto" height="550" id="creations-command-handler-img" data-bs-toggle="tooltip" data-bs-title="Command Handler [Click to Visit]" />
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <p class="fs-3 fw-bold text-light text-center">COMMAND <span class="fs-3 fw-bold text-primary text-center mt-5">HANDLER</span></p>
+
+                        <p class="text-secondary fs-4 mx-5">
+                            A command handler which manages the creation and execution of custom commands with the Scripting-API of Minecraft Bedrock Edition.
+
+                            <br /><br />
+
+                            This command handler may be quite outdated due to the fact that it has not been maintained for quite some time now. However, the function of the system is simply the management of custom commands and their execution in order to allow dynamic parameters for various commands.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Creations Mobile View -->
+            <div class="mobile-view">
+                <div class="row hidden">
+                    <img src="./resources/images/random-javascript-1.jpg" alt="Random JavaScript Program" class="rounded-5 mx-auto d-block mb-5" width="auto" height="550" id="creations-img" />
+                </div>
+                <div class="row mb-5 hidden">
+                    <p class="text-secondary fs-4 px-5">
+                        Throughout my approximately four (4) years of programming experience, I have developed various creations and systems. For basic HTML-CSS-JS games, I have programmed TicTacToe, Color-Guessing Games, and other games which do not require object-rendering.
+
+                        <br /><br />
+
+                        Minercaft Scripting API related, I have developed wrappers, command handlers, event handlers, custom mini-game systems. and more.
+                    </p>
+                </div>
+
+                <div class="row mb-5 hidden">
+                    <a href="./resources/projects/tictactoe/index.html">
+                        <img src="./resources/images/tictactoe.jpg" alt="TicTacToe" class="rounded-5 mx-auto d-block mb-5" width="auto" height="550" id="creations-tictactoe-img" data-bs-toggle="tooltip" data-bs-title="TicTacToe (Click)" />
+                    </a>
+                </div>
+
+                <div class="row mb-5 hidden">
+                    <p class="text-secondary fs-4 px-5">
+                        This <span class="fw-bold text-primary">TicTacToe</span> game which I have developed is a <span class="fw-bold">Player VS Bot</span> where the bot's data (place delay and accuracy) can be edited.
+
+                        <br /><br />
+
+                        The bot has an algorithm that it follows where it detects possible winning orientations of the player and stops them (the player) from winning easily.
+                    </p>
+                </div>
+
+                <div class="row mb-5 hidden">
+                    <a href="https://github.com/imnotverysure/CommandHandler">
+                        <img src="./resources/images/command-handler.png" alt="CommandHandler" class="rounded-5 mx-auto d-block mb-5" width="auto" height="550" id="creations-command-handler-img" data-bs-toggle="tooltip" data-bs-title="Command Handler (Click)" />
+                    </a>
+                </div>
+
+                <div class="row mb-5 hidden">
+                    <p class="fs-3 fw-bold text-light text-center">COMMAND <span class="fs-3 fw-bold text-primary text-center mt-5">HANDLER</span></p>
+
+                    <p class="text-secondary fs-4 px-5">
+                        A command handler which manages the creation and execution of custom commands with the Scripting-API of Minecraft Bedrock Edition.
+
+                        <br /><br />
+
+                        This command handler may be quite outdated due to the fact that it has not been maintained for quite some time now. However, the function of the system is simply the management of custom commands and their execution in order to allow dynamic parameters for various commands.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Break Image -->
+        <img src="./resources/images/keyboard.jpg" alt="Keyboard" class="rounded-5 mx-auto d-block mb-5 introduction-img" width="auto" height="550" />
+
+        <div id="favorites" class="container-fluid mx-auto my-5 hidden">
+            <br />
+
+            <p class="fs-3 fw-bold text-light text-center">FAVO<span class="fs-3 fw-bold text-primary text-center mt-5">RITES</span></p>
+            <p class="fs-4 fw-bold text-body-secondary text-center mb-5">Some things that I like</p>
+
+            <!-- Favorites Default View -->
+            <div class="default-view row-cols-1 mt-5">
+                <div class="row row-cols-2">
+                    <div class="col my-5 hidden">
+                        <a href="https://open.spotify.com/playlist/2rHia2BhohHSsNH6Ol6XrW?si=zjt-OvsPR4WWtM3ugl509A" target="_blank" class="text-success" data-bs-toggle="tooltip" data-bs-title="My Favorite Spotify Playlist">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" fill="currentColor" class="bi bi-spotify hover-shake mx-auto d-block" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="row my-5 hidden">
+                        <p class="text-secondary fs-4 px-5">
+                            This playlist is one of my favorites as it does not only consists of my favorite songs, but songs which reminds me of her, my girlfriend.
+
+                            <br /><br />
+
+                            This playlist was also made by both of us where we add songs that reminds us of each other when we listen to it.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col my-5 hidden">
+                    <iframe src="https://open.spotify.com/embed/artist/33tFkBLsl6f8TjKkV0uF0C?utm_source=generator&theme=0" width="100%" height="500" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" class="rounded hover-shake mx-auto d-block" data-bs-toggle="tooltip" data-bs-title="My Favorite Artist/Band" loading="lazy"></iframe>
+                </div>
+
+                <div class="col mt-5 hidden">
+                    <iframe src="https://open.spotify.com/embed/track/54ceIU2idlglv0XlYJNe2a?utm_source=generator" width="100%" height="350" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" class="rounded hover-shake mx-auto d-block" data-bs-toggle="tooltip" data-bs-title="My Favorite Song" loading="lazy"></iframe>
+                </div>
+
+                <p class="text-secondary fs-4 px-5"><span class="fw-bolder text-primary">Lovejoy</span> has been one of my favorite artists/bands as most of the songs they have written and composed are one of the songs that I really like. My favorite song that is written by this artist/band is <span class="fw-bold text-info">The Fall</span>.</p>
+            </div>
+
+            <!-- Favorites Mobile View -->
+            <div class="mobile-view row-cols-1 mt-5">
+                <div class="col my-5 hidden">
+                    <a href="https://open.spotify.com/playlist/2rHia2BhohHSsNH6Ol6XrW?si=zjt-OvsPR4WWtM3ugl509A" target="_blank" class="text-success" data-bs-toggle="tooltip" data-bs-title="My Favorite Spotify Playlist">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" fill="currentColor" class="bi bi-spotify hover-shake mx-auto d-block" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"
+                            />
+                        </svg>
+                    </a>
+
+                    <p class="text-secondary fs-4 px-5 mt-5">
+                        This playlist is one of my favorites as it does not only consists of my favorite songs, but songs which reminds me of her, my girlfriend.
+
+                        <br /><br />
+
+                        This playlist was also made by both of us where we add songs that reminds us of each other when we listen to it.
+                    </p>
+                </div>
+
+                <div class="col my-5 hidden">
+                    <iframe src="https://open.spotify.com/embed/artist/33tFkBLsl6f8TjKkV0uF0C?utm_source=generator&theme=0" width="100%" height="500" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" class="rounded hover-shake mx-auto d-block" data-bs-toggle="tooltip" data-bs-title="My Favorite Artist/Band" loading="lazy"></iframe>
+                </div>
+
+                <div class="col mt-5 hidden">
+                    <iframe src="https://open.spotify.com/embed/track/54ceIU2idlglv0XlYJNe2a?utm_source=generator" width="100%" height="350" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" class="rounded hover-shake mx-auto d-block" data-bs-toggle="tooltip" data-bs-title="My Favorite Song" loading="lazy"></iframe>
+                </div>
+
+                <p class="text-secondary fs-4 px-5"><span class="fw-bolder text-primary">Lovejoy</span> has been one of my favorite artists/bands as most of the songs they have written and composed are one of the songs that I really like. My favorite song that is written by this artist/band is <span class="fw-bold text-info">The Fall</span>.</p>
+            </div>
+        </div>
+    </body>
+</html>

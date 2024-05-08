@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+@import url("lib/bootstrap.css");
+
+* {
+    font-family: Poppins, sans-serif;
+}
+
+:root {
+    --mark-size: calc(250px * 0.2);
+}
+
+.main-body {
+    background-color: #4d4d4d;
+}
+
+.turn-label {
+    margin-inline: 5%;
+}
+
+.turn-current {
+    border: 2.5px solid rgb(8, 115, 0);
+    border-radius: 2px;
+
+    padding: 2.5px;
+
+    color: rgb(17, 255, 0);
+}
+
+.table-row {
+    width: 100%;
+    height: 65px;
+}
+
+.table-cell {
+    width: 65px;
+    height: 100%;
+
+    cursor: pointer;
+
+    display: inline-flex;
+
+    position: relative;
+
+    justify-content: center;
+    align-items: center;
+
+    border: 2.5px solid rgb(49, 49, 49);
+
+    background-color: rgb(236, 236, 236);
+}
+
+.X::before,
+.X::after {
+    content: "";
+
+    position: absolute;
+
+    width: calc(var(--mark-size) * 0.125);
+    height: calc(var(--mark-size) * 1.25);
+
+    background-color: black;
+}
+
+.X::before {
+    transform: rotate(45deg);
+}
+
+.X::after {
+    transform: rotate(-45deg);
+}
+
+.O::before,
+.O::after {
+    content: "";
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    background-color: inherit;
+}
+
+.O::before {
+    width: var(--mark-size);
+    height: var(--mark-size);
+
+    background-color: black;
+}
+
+.O::after {
+    width: calc(var(--mark-size) * 0.725);
+    height: calc(var(--mark-size) * 0.725);
+}
+
+.hovered::before,
+.hovered::after {
+    background-color: rgb(125, 123, 108);
+}
+
+.hovered.O::after {
+    background-color: inherit;
+}
+
+.end-screen {
+    display: none;
+}
+.end-screen.display {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+}

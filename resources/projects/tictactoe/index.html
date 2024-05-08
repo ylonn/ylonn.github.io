@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TicTacToe</title>
+
+        <link rel="icon" href="../../images/tictactoe.jpg" />
+        <link rel="stylesheet" href="./styles/main.css" />
+        <script type="module" src="./scripts/index.js" defer></script>
+    </head>
+
+    <body class="main-body bg-black text-light user-select-none">
+        <!-- Gameplay Modifier -->
+        <nav id="settings-collapse" class="navbar navbar-expand-xxlg border-bottom sticky-top bg-black">
+            <div class="container-fluid">
+                <a class="navbar-brand website-logo" href="../../../index.html#">
+                    <img src="../../images/ylon-logo.png" alt="Personal Website Logo" width="35" height="35" />
+                </a>
+
+                <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#settings" aria-controls="settings" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-sliders" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1z" />
+                    </svg>
+                </button>
+
+                <div id="settings" class="collapse navbar-collapse">
+                    <div class="navbar-nav nav-pills">
+                        <!-- Player 2 Settings -->
+                        <p class="px-2 fw-bolder text-primary fs-4">Player 2 Settings</p>
+
+                        <p class="p-2"><span class="text-danger fw-bolder">NOTE:</span> The settings applied will update after the current game.</p>
+
+                        <!-- Player Type -->
+                        <div class="form-check form-switch py-2">
+                            <input class="form-check-input text-bg-secondary text-light" type="checkbox" role="switch" id="is-player" />
+                            <label class="form-check-label" for="is-player">Is Player</label>
+                        </div>
+
+                        <div id="bot-settings" class="container-fluid">
+                            <!-- Place Delay -->
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control text-bg-dark" id="place-delay" placeholder="1" />
+                                <label for="place-delay">Place Delay (In Seconds)</label>
+                            </div>
+
+                            <!-- Accuracy -->
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control text-bg-dark" id="accuracy" placeholder="1" />
+                                <label for="accuracy">Accuracy (In Percent)</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="main" align="center">
+            <div class="turn-labels text-center"></div>
+
+            <div class="table mt-5"></div>
+
+            <div class="end-screen"></div>
+        </div>
+    </body>
+</html>

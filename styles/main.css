@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+@import url("lib/bootstrap.css");
+
+* {
+    font-family: Poppins, sans-serif;
+}
+
+/* Id Specific Selectors */
+
+#creations-img {
+    filter: brightness(0.4);
+    opacity: 0.55;
+    width: 100%;
+}
+
+#creations-tictactoe-img {
+    filter: brightness(0.4);
+    opacity: 0.55;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+#creations-command-handler-img {
+    filter: brightness(0.4);
+    opacity: 0.55;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+#creations-tictactoe-img:hover {
+    filter: brightness(0.9);
+    width: 100%;
+    animation: shake 0.075s;
+    animation-iteration-count: 2;
+}
+
+#creations-command-handler-img:hover {
+    filter: brightness(0.9);
+    width: 100%;
+    animation: shake 0.075s;
+    animation-iteration-count: 2;
+}
+
+#about-img-2 {
+    filter: brightness(0.9);
+    opacity: 0.7;
+}
+
+#about {
+    text-align: justify;
+}
+
+#creations {
+    text-align: justify;
+}
+
+#favorites {
+    text-align: justify;
+}
+
+/* Class Specific Selectors */
+.introduction-img {
+    filter: brightness(0.4);
+    width: 100%;
+}
+
+.about-img {
+    filter: brightness(0.4);
+    opacity: 0.55;
+    width: 100%;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(25px);
+    transition: all 0.65s;
+    transform: translateX(-100%);
+}
+
+.shown {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.hover-shake:hover {
+    animation: shake 0.075s;
+    animation-iteration-count: 1;
+}
+
+.social:hover {
+    animation: shake 0.05s;
+    animation-iteration-count: 1;
+}
+
+/* Shake Keyframe */
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(-5px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.mobile-view {
+    display: none;
+}
+
+/* #navigation-collapse {
+    display: none;
+} */
+
+@media (max-width: 767.98px) {
+    .mobile-view {
+        display: block;
+    }
+
+    .default-view {
+        display: none;
+    }
+}

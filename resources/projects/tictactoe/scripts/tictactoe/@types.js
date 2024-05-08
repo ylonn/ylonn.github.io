@@ -1,0 +1,3 @@
+/**
+ * @typedef {"X" | "O"} PlaceMark
+ */
